@@ -16,3 +16,9 @@ DOMSelectors.form.addEventListener("submit"),
       (header) => (header.textContent = DOMSelectors.firstName.value)
     );
   };
+
+//querySelectorAll(x) creates nodelist of all elements with x selector, querySelector(x) returns first element with x selector
+
+// funct baseobject(1,2,3){this.1,this.2,this.3}
+// const object = new baseobject("ooga","booga","dooga")
+// object.create = no constructor function

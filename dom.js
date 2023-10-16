@@ -22,3 +22,6 @@ DOMSelectors.form.addEventListener("submit"),
 // funct baseobject(1,2,3){this.1,this.2,this.3}
 // const object = new baseobject("ooga","booga","dooga")
 // object.create = no constructor function
+// addEventListener = calls function when event occurs (type, listener, options [special parameter type]
+// element.innerHTML = self-explanetory, cancels out event listeners
+// insertAdjacentHTML(position,text)

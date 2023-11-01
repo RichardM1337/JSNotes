@@ -51,4 +51,15 @@ function parkingChecker(spaces, yesterday, today) {
   }
   console.log(spots);
 }
-parkingChecker(5, strYest, strTod);
+
+
+//PRACTICE 2
+playlist=['A','B','C','D',"E"]
+function CCCPlayer(buttonNum,pressNum){
+    if(buttonNum==1){}
+    elif(buttonNum==2){}
+    elif(buttonNum==3){}
+    elif(buttonNum==4){}
+    else{}
+
+}

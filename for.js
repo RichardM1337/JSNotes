@@ -52,14 +52,34 @@ function parkingChecker(spaces, yesterday, today) {
   console.log(spots);
 }
 
-
 //PRACTICE 2
-playlist=['A','B','C','D',"E"]
-function CCCPlayer(buttonNum,pressNum){
-    if(buttonNum==1){}
-    elif(buttonNum==2){}
-    elif(buttonNum==3){}
-    elif(buttonNum==4){}
-    else{}
-
+playlist = ["A", "B", "C", "D", "E"];
+/* var checker = 0;
+while ((checker = 0)) {
+  buttonPrompt = prompt("watbutton");
+  pressPrompt = prompt("howmanytime");
+  if (buttonPrompt === 4) {
+    checker = 1;
+  }
+} */
+function CCCPlayer(buttonNum, pressNum) {
+  if (buttonNum == 1) {
+    for (let i = 0; i < pressNum; i++) {
+      const firstEntry = playlist.shift(); // takes first entry n deletes it but also returns it
+      playlist.push(firstEntry); // puts first entry at end
+    }
+  } else if (buttonNum == 2) {
+    for (let i = 0; i < pressNum; i++) {
+      const lastEntry = playlist.pop(); // takes last entry and deletes it but also returns it
+      playlist.splice(0, 0, lastEntry); // places last entry at index 0 (addition without replacement)
+    }
+  } else if (buttonNum == 3) {
+    for (let i = 0; i < pressNum; i++) {
+      const entryTwo = playlist[1]; // takes 2nd entry
+      playlist.splice(1, 1); // deletes 2nd entry
+      playlist.splice(0, 0, entryTwo); // puts 2nd entry first
+    }
+  } else if (buttonNum == 4) {
+    console.log(playlist);
+  }
 }

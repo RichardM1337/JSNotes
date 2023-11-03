@@ -39,7 +39,7 @@ linearSearch(5, numArr); */
 // an algorithm is made up of iteration [for loops], selection [if statements], and sequencing [different steps in case of different events]
 
 //PRACTICE
-
+/*
 let strYest = "CC..C";
 let strTod = ".CC.C";
 function parkingChecker(spaces, yesterday, today) {
@@ -50,11 +50,19 @@ function parkingChecker(spaces, yesterday, today) {
     }
   }
   console.log(spots);
-}
+} */
 
 //PRACTICE 2
-playlist = ["A", "B", "C", "D", "E"];
-function CCCPlayer(buttonNum, pressNum) {
+/* playlist = ["A", "B", "C", "D", "E"]; */
+/* var checker = 0;
+while ((checker = 0)) {
+  buttonPrompt = prompt("watbutton");
+  pressPrompt = prompt("howmanytime");
+  if (buttonPrompt === 4) {
+    checker = 1;
+  }
+} */
+/* function CCCPlayer(buttonNum, pressNum) {
   if (buttonNum == 1) {
     for (let i = 0; i < pressNum; i++) {
       const firstEntry = playlist.shift(); // takes first entry n deletes it but also returns it
@@ -71,9 +79,20 @@ function CCCPlayer(buttonNum, pressNum) {
       playlist.splice(1, 1); // deletes 2nd entry
       playlist.splice(0, 0, entryTwo); // puts 2nd entry first
     }
+  } else if (buttonNum == 4) {
+    console.log(playlist);
   }
-  console.log(playlist);
 }
-
-CCCPlayer(2, 1);
-CCCPlayer(2, 1);
+ */
+// FIBONACCI
+function fibonacci(fibIterate) {
+  fibArray = [0, 1]; // sets 0,1
+  for (let i = 2; i < fibIterate + 1; i++) {
+    // i is 2 for n-1,n-2. it will stop at wahtever number the user wants
+    // fib iterate has an extra + because arrays index at 0
+    fibArray.push(fibArray[i - 1] + fibArray[i - 2]); // puts in array the previous entry + the 2nd previous entry
+  }
+  console.log(fibArray);
+  console.log(fibArray[fibIterate]);
+}
+fibonacci(12);

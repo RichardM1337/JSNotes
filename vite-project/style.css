@@ -1,0 +1,12 @@
+:root{--blue:#1355ee;
+--orange:#ff7710;
+--primary:var(--orange)} /* root targets html */
+body{
+  background-color: var(--primary);
+}
+.light{
+  --primary: var(--orange);
+}
+.dark{
+  --primary: var(--blue);
+}

@@ -20,7 +20,7 @@ nuggies.then((result) => {
  */
 
 // rest api
-const URL = `https://api.quotable.io/randoms`;
+/* const URL = `https://api.quotable.io/randoms`;
 async function getData(URL) {
   try {
     // try this code
@@ -45,3 +45,52 @@ async function getData(URL) {
 }
 // async allows functions to use promise, await, etc.
 getData(URL);
+ */
+
+// TEST REVIEW
+const Gabe = {
+  name: "Yizhak", // string
+  age: 15, // number
+  isCool: false, //boolean
+};
+
+console.log(Gabe.name[0]);
+for (let i = 0; i < Gabe.name.length; i++) {
+  // string cycling
+  console.log(Gabe.name[i]);
+}
+let i = 0;
+while (i < Gabe.name.length) {
+  // usually for preestablished variabls
+  console.log(Gabe.name[i]);
+  i++;
+}
+
+function needle(name, search) {
+  if (name.includes(search)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(needle(Gabe.name, ""));
+// triple = checks for type, double = doesn't
+//1 + "1" = "11"
+
+// ... is spread operator
+let x = [1, 2, 3];
+let y = [4, 5, 6];
+let z = { ...x };
+
+function sortString(name) {
+  let x = [...name].sort(); //  case sensitivity important -- pc prioritizes capitals
+  console.log(x);
+}
+
+function remove(name) {
+  let x = [...name];
+  x.splice(1, 1); // - equals last digit (go backwards)
+  console.log(x);
+}
+remove(Gabe.name);

@@ -21,5 +21,6 @@ function Gabe(word1, word2) {
     }
   }
 }
-Gabe("guy", "car");
+Gabe("guy", "cars");
 console.log(string);
+// fix

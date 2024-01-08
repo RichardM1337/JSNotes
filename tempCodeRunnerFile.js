@@ -21,5 +21,16 @@ function Gabe(word1, word2) {
     }
   }
 }
-Gabe("guy", "car");
-console.log(string);
+Gabe("guy", "cars");
+// fix
+
+let findDiff = function (s, t) {
+  let sortS = [...s].sort();
+  let sortT = [...t].sort();
+  for (let i = 0; i < sortT.length; i++) {
+    if (sortT[i] != sortS[i]) {
+      return sortT[i];
+    }
+  }
+};
+console.log(findDiff("hi", "bird"));

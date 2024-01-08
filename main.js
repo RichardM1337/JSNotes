@@ -94,3 +94,18 @@ function remove(name) {
   console.log(x);
 }
 remove(Gabe.name);
+
+let findDiff = function (s, t) {
+  //sequencing (series of steps)
+  let sortS = [...s].sort();
+  let sortT = [...t].sort();
+  for (let i = 0; i < sortT.length; i++) {
+    // selection (if statements)
+    if (sortT[i] != sortS[i]) {
+      return sortT[i];
+      // iteration through array
+      // different steps
+    }
+  }
+};
+console.log(findDiff("abdcef", "abcduef"));
